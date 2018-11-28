@@ -1,6 +1,6 @@
 # math-series
 
-**Author**: Toby
+**Author**: Toby  
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
@@ -34,8 +34,8 @@ No API available yet.
 
 
 ## Change Log
-<!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
+<!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:-->
 
 11/27/18 4:59pm - Added functionality to add and delete some things.
 11/27/18 22:43pm - Updated file and readme.md.
--->
+
