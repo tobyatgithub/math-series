@@ -91,16 +91,27 @@ def run():
         if 'fibonacci' in user_input.lower():
             # grab input numeric value
             num = (user_input.replace(")","").split("("))
-            print("", fibonacci(int(num[-1]),FIB_SAVE),"\n")
+            if num[-1].isdigit():
+                print("ans = ", fibonacci(int(num[-1]),FIB_SAVE),"\n")
+            else:
+                print("please give valid input for fibonacci: fibonacci(n)\n")
 
         if 'lucas' in user_input.lower():
             # grab input numeric value
             num = (user_input.replace(")","").split("("))
-            print("", lucas(int(num[-1]),LUC_SAVE),"\n")
+            if num[-1].isdigit():
+                print("ans = ", lucas(int(num[-1]),LUC_SAVE),"\n")
+            else:
+                print("please give valid input for lucas: lucas(n)\n")
 
         if 'sum_series' in user_input.lower():
+
             n, v1, v2 = (user_input.replace(")","").split("("))[-1].split(",")
-            print("", sum_series(int(n), float(v1), float(v2)),"\n")
+            if (n.isdigit()) and (v1.isdigit()) and (v2.isdigit()):
+                print("ans = ", sum_series(int(n), float(v1), float(v2)),"\n")
+            else:
+                print("please give valid input for sum seris: sum_seris(n, v1, v2)\n")
+
 
     # print quit info as user exit the while loop
     print("\nQuit program...Bye" )
